@@ -14,7 +14,7 @@ CatsRouter.get('/', (req, res) => {
             })
         }
     })
-})
+});
 
 //NEW
 CatsRouter.get('/new', (req, res) => {
@@ -31,7 +31,7 @@ CatsRouter.delete('/:id', (req, res) => {
         } else {
             console.log(deletedCat)
             res.redirect('/cats')
-        }
+        };
     })
 })
 
@@ -44,7 +44,7 @@ CatsRouter.put('/:id', (req, res) => {
             })
         } else {
             res.redirect('/cats')
-        }
+        };
     })
 })
 
@@ -58,7 +58,17 @@ CatsRouter.post('/', (req, res) => {
         } else {
             console.log(createdCat)
             res.redirect('/cats')
-        }
+        };
+        if (req.body.isCatDeclawed == "on") {
+            req.body.isCatDeclawed = true; 
+        } else {
+            req.body.isCatDeclawed = false; 
+        };
+        if (req.body.isCatFixed == "on") {
+            req.body.isCatFixed = true; 
+        } else {
+            req.body.isCatFixed = false; 
+        };
     })
 
 })

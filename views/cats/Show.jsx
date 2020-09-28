@@ -24,9 +24,9 @@ class Show extends React.Component {
                     <p>Location</p>
                     <h2>{location}</h2>
                     <p>Declawed</p>
-                    <h2>{isCatDeclawed}</h2>
+                    <h2>{isCatDeclawed ? `The cat is declawed` : `The cat is NOT declawed`}</h2>
                     <p>Fixed</p>
-                    <h2>{isCatFixed}</h2>
+                    <h2>{isCatFixed ? `The cat is fixed` : `The cat still needs to be fixed`}</h2>
                     <a href={`/cats/${_id}/edit`}>Edit</a>
                     <form action={`/cats/${_id}/?_method=DELETE`} method="POST">
                             <input type="submit" value="Delete This Cat" /> 

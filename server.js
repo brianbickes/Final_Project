@@ -23,9 +23,13 @@ mongoose.connection.once('open', () => {
 
 //CONTROLLERS
 
-//CLASSES
+//DOGS
 const dogsController = require('./controllers/dogs.js');
 app.use('/dogs', dogsController); 
+
+//CATS
+const catsController = require('./controllers/cats.js');
+app.use('/cats', catsController); 
 
 //STATIC PAGES
 

@@ -58,7 +58,12 @@ DogsRouter.post('/', (req, res) => {
         } else {
             console.log(createdDog)
             res.redirect('/dogs')
-        }
+        };
+        if (req.body.isDogFixed == "on") {
+            req.body.isDogFixed = true; 
+        } else {
+            req.body.isDogFixed = false; 
+        };
     })
 
 })

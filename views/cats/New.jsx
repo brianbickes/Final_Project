@@ -9,7 +9,7 @@ class New extends React.Component {
                 <h1>New Cat Page</h1>
                 <form action="/cats" method="POST">
                     
-                    <label HTMLFor="name">Cat name</label><input type="text" name="title" id="name"></input><br/>
+                    <label HTMLFor="name">Cat name</label><input type="text" name="name" id="name"></input><br/>
                     <label HTMLFor="breed">Breed</label><input type="text" name="breed" id="breed"></input><br/>
                     <label HTMLFor="sex">Sex</label><input type="text" name="sex" id="sex"></input><br/>
                     <label HTMLFor="age">Age</label><input type="number" name="age" id="age"></input><br/>

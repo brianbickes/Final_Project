@@ -38,11 +38,11 @@ const catSchema = new Schema({
     isCatDeclawed: {
         type: Boolean,
         default: false,
-        required: true
+        required: false
     },
     isCatFixed: {
         type: Boolean,
-        required: true
+        required: false
     },
     image: {
         type: String

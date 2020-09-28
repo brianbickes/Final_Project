@@ -51,6 +51,16 @@ CatsRouter.put('/:id', (req, res) => {
 //CREATE
 CatsRouter.post('/', (req, res) => {
     Cats.create(req.body, (error, createdCat) => {
+        if (req.body.isCatDeclawed === "on") {
+            req.body.isCatDeclawed = true; 
+        } else {
+            req.body.isCatDeclawed = false; 
+        };
+        if (req.body.isCatFixed === "on") {
+            req.body.isCatFixed = true; 
+        } else {
+            req.body.isCatFixed = false; 
+        };
         if (error) {
             res.status(500).send({
                 error: error.message
@@ -59,23 +69,14 @@ CatsRouter.post('/', (req, res) => {
             console.log(createdCat)
             res.redirect('/cats')
         };
-        if (req.body.isCatDeclawed == "on") {
-            req.body.isCatDeclawed = true; 
-        } else {
-            req.body.isCatDeclawed = false; 
-        };
-        if (req.body.isCatFixed == "on") {
-            req.body.isCatFixed = true; 
-        } else {
-            req.body.isCatFixed = false; 
-        };
+        
     })
 
 })
 
 //EDIT
 CatsRouter.get('/:id/edit', (req, res) => {
-    Cats.findById(req.params.id, (error, foundCat) => {
+    Cats.findById(req.params.id, (error, foundCats) => {
         if (error) {
             res.status(500).send({
                 error: error.message
@@ -90,9 +91,9 @@ CatsRouter.get('/:id/edit', (req, res) => {
 
 //SHOW
 CatsRouter.get('/:id', (req, res) => {
-    Cats.findById(req.params.id, (error, foundCat) => {
+    Cats.findById(req.params.id, (error, foundCats) => {
         res.render('cats/Show', {
-            cats: foundCat
+            cats: foundCats
         });
     });
 });

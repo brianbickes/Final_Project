@@ -44,6 +44,10 @@ app.get('/contact-us', (req, res) => {
     res.render('static/ContactUs')
 });
 
+app.get('/maps', (req, res) => {
+    res.render('static/App')
+});
+
 //LISTENER
 app.listen(PORT, ()=>{
     console.log("I am always listening....")

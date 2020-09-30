@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import { Map, Marker, GoogleApiWrapper } from 'google-maps-react'
+import Default from '../components/Default';
 
 class App extends Component {
 render() {
@@ -8,21 +9,24 @@ const style = {
  height: '300px'
  }
 return (
+    <Default>
  <div className="App">
  Hello World
  <Map 
  google={this.props.google} 
  zoom={10}
  initialCenter={{
- lat: 35.5496939,
- lng: -120.7060049
+ lat: 33.448376,
+ lng: -112.074036
  }}
  style={style}
  />
  </div>
+ </Default>
  );
  }
 }
+
 export default GoogleApiWrapper({
  apiKey: ('AIzaSyBqENhJ1BJrKktKXGodyHnWQalD-wib9B0')
 })(App);

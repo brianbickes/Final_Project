@@ -52,6 +52,9 @@ app.get('/request', (req, res) => {
     res.render('static/Request')
 });
 
+app.get('/stats', (req, res) => {
+    res.render('static/Stats')
+});
 //LISTENER
 app.listen(PORT, ()=>{
     console.log("I am always listening....")

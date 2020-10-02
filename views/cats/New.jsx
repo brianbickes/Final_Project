@@ -5,12 +5,12 @@ const Default = require('../components/Default');
 class New extends React.Component {
     render(){
         return (
-            // <Default>
+            <Default>
             <div>
-                <h1>New Cat Page</h1>
-                <form action="/cats" method="POST">
+                
+                <form class="catsNew" action="/cats" method="POST">
                    
-                    
+                    <h1>New Cat Page</h1>
                     <label HTMLFor="name">Cat name</label><input type="text" name="name" id="name"></input><br/>
                     <label HTMLFor="breed">Breed</label><input type="text" name="breed" id="breed"></input><br/>
                     <label HTMLFor="sex">Sex</label><input type="text" name="sex" id="sex"></input><br/>
@@ -25,7 +25,7 @@ class New extends React.Component {
                     <input type="submit" value="Create New Cat for Adoption"></input>
                 </form>
             </div>
-            // </Default>
+             </Default>
         )
     }
 };

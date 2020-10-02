@@ -1,5 +1,6 @@
 const React = require('react');
 const Default = require('../components/Default');
+import Button from 'react-bootstrap/Button';
 
 class Show extends React.Component {
     render() {
@@ -8,7 +9,7 @@ class Show extends React.Component {
             <Default>
                 <div class="showDog">
                     <h1>{name}</h1>
-                    <img src={image} className="Image" height="300px" width="30%" /><br />
+                    <img src={image} className="dogImage" height="300px" width="30%" /><br />
                     <p>Breed</p>
                     <h2>{breed}</h2>
                     <p>Sex</p>
@@ -25,6 +26,7 @@ class Show extends React.Component {
                     <h2>{location}</h2>
                     {/* <p>Fixed</p>
                     <h2>{isDogFixed ? `The dog is fixed` : `The dog still needs to be fixed`}</h2> */}
+                    <Button href="/request" variant="primary">Adopt Me!</Button>{' '}
                     <a href={`/dogs/${_id}/edit`}>Edit</a>
                     <form action={`/dogs/${_id}/?_method=DELETE`} method="POST">
                             <input type="submit" value="Delete This Dog" /> 

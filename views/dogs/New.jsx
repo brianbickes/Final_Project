@@ -6,9 +6,9 @@ class New extends React.Component {
         return (
             <Default>
             <div>
-                <h1>New Dog Page</h1>
-                <form action="/dogs" method="POST">
-                    
+                
+                <form class="newDogs" action="/dogs" method="POST">
+                    <h1>New Dog Page</h1>
                     <label HTMLFor="name">Dog name</label><input type="text" name="name" id="name"></input><br/>
                     <label HTMLFor="breed">Breed</label><input type="text" name="breed" id="breed"></input><br/>
                     <label HTMLFor="sex">Sex</label><input type="text" name="sex" id="sex"></input><br/>

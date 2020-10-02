@@ -5,6 +5,7 @@ class Index extends React.Component {
     render() {
         return (
             <Default>
+                <h1 class="indexHeadline">Below is a list of currently available cats in our shelter. </h1>
                 
                     {
                         this.props.cats.map((cats) => {

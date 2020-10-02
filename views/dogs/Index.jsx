@@ -5,12 +5,12 @@ class Index extends React.Component {
     render() {
         return (
             <Default>
-                
+                <h1 class="indexHeadline">Below is a list of currently available dogs in our shelter. </h1>
                     {
                         this.props.dogs.map((dogs) => {
                             return (
-                                
                                 <div class="createDogs" key={dogs._id}>
+                                    
                                     <div class="createDogs">
                                         <span><img src={dogs.image} className="dogImage" height="300px" width="30%" /></span><br />
                                         <h1><a href={`/dogs/${dogs._id}`}>{dogs.name}</a></h1>

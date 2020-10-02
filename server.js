@@ -48,6 +48,10 @@ app.get('/maps', (req, res) => {
     res.render('static/App')
 });
 
+app.get('/request', (req, res) => {
+    res.render('static/Request')
+});
+
 //LISTENER
 app.listen(PORT, ()=>{
     console.log("I am always listening....")

@@ -4,6 +4,7 @@
 /*Dog Index*/
 .createDogs {
      display: flex;
+     flex-wrap: wrap;
     flex-direction: column;
     justify-content: center;
     align-items: center;
@@ -11,11 +12,29 @@
 .dogImage {
     width: 300px;
     padding: 10px; 
+    margin: 10px;
     background-color: rgb(24, 23, 22);
     border-radius: 10%;
+    transition-duration: 200ms;
+}
+
+.indexHeadline {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-decoration-line: underline;
+    padding: 0px 0px 20px 0px; 
 }
 /*Cat Index*/
 .createCats {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+.showCat {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -26,6 +45,7 @@
     padding: 10px; 
     background-color: rgb(24, 23, 22);
     border-radius: 10%;
+    transition-duration: 200ms;
 
 }
 /*DEFAULT*/

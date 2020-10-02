@@ -27,6 +27,8 @@ class Default extends React.Component {
                                 <div class="dropdown-content">
                                     <a href="/dogs">Dogs</a>
                                     <a href="/cats">Cats</a>
+                                    <a href="/maps">Local Map</a>
+                                    <a href="/request">Adoption Request</a>
                                 </div>
                             </div>
                         </nav>

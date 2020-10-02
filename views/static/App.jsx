@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import { Map, Marker, GoogleApiWrapper } from 'google-maps-react'
 import Default from '../components/Default';
+import 'bootstrap/dist/css/bootstrap.min.css';
 
 class App extends Component {
 render() {

@@ -1,6 +1,7 @@
 const React = require('react');
 const Default = require('../components/Default');
 
+
 class New extends React.Component {
     render(){
         return (
@@ -8,6 +9,7 @@ class New extends React.Component {
             <div>
                 <h1>New Cat Page</h1>
                 <form action="/cats" method="POST">
+                   
                     
                     <label HTMLFor="name">Cat name</label><input type="text" name="name" id="name"></input><br/>
                     <label HTMLFor="breed">Breed</label><input type="text" name="breed" id="breed"></input><br/>

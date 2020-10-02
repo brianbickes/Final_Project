@@ -34,7 +34,7 @@ app.use('/cats', catsController);
 //STATIC PAGES
 
 app.get('/', (req, res) => {
-    res.render('static/Home')
+    res.render('static/Home.jsx')
 });
 
 app.get('/about', (req, res) => {

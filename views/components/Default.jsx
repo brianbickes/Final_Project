@@ -1,9 +1,9 @@
 const React = require('react');
 import Navbar from 'react-bootstrap/Navbar';
 import Nav from 'react-bootstrap/Nav';
-import NavDropdown from 'react-bootstrap/NavDropdown';
-import Form from 'react-bootstrap/Form';
-import FormControl from 'react-bootstrap/FormControl';
+import Container from 'react-bootstrap/Container';
+import Col from 'react-bootstrap/Col';
+import Row from 'react-bootstrap/Row';
 import Button from 'react-bootstrap/Button';
 
 class Default extends React.Component {
@@ -19,14 +19,27 @@ class Default extends React.Component {
                         integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk"
                         crossorigin="anonymous"
                     />
+                    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"></link>
                     <title>Furever Home</title>
                 </head>
                 <body>
-                    <div class="homeContainer">
-                        <div class="pageTop">
+                    <div class="Container">
+                        <Container>
+                            <Row >
+                                <Col>
                             <img class="dogBanner" src="https://i.imgur.com/1XuecUo.png" height="100px" width="180px"></img>
-                            {/* <h1>Furever Home</h1> */}
-                        </div>
+                            </Col>
+                            <a href="#" class="fa fa-facebook"></a>
+                            
+                            <a href="#" class="fa fa-twitter"></a>
+                            
+                            <a href="#" class="fa fa-instagram"></a>
+                            
+                            
+                            
+                            </Row>
+                           
+                        </Container>
                         <Nav class="navBar" fill variant="tabs" defaultActiveKey="/home">
                             <Nav.Item>
                                 <Nav.Link href="/">Home</Nav.Link>
@@ -58,15 +71,15 @@ class Default extends React.Component {
                                 </div>
                             </div>
                         </nav> */}
-                        <div>
+                        <div class="dog">
                             <img class="dog" src="https://i.imgur.com/vLA7Lnx.png" wodth="100%"></img>
                         </div>
 
 
                         {this.props.children}
-                        <footer>
-                            <></>
-                        </footer>
+
+                        <div class="footer">© 2020 Furever Home Animal Rescue. All Rights Reserved.(Not really)</div>
+
                     </div>
                 </body>
             </html>

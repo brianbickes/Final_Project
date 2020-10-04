@@ -1,6 +1,10 @@
 * {
     background-color: rgb(188, 200, 201);
+   
 
+}
+body {
+    color: white; 
 }
 /*Dog Index*/
 .createDogs {
@@ -98,3 +102,58 @@
     text-decoration: underline;
     padding: 50px 0px 50px 0px; 
 }
+.footer {
+    position: relative;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    padding: 1rem;
+    background-color: #efefefaf;
+    text-align: center;
+    margin: 20px 0px 0px 0px; 
+     
+}
+
+.statement {
+    padding: 10px 10px 10px 10px; 
+    margin: 100px;
+    background-color: rgb(49, 49, 49);
+    border-radius: 20px;
+    opacity: 80%; 
+}
+
+
+.mission {
+    margin: 10px;
+    padding: 10px 0px 10px 0px; 
+    font-family: cursive;
+    color: #0072b9;
+}
+
+.video {
+    border:20px solid #000;
+    border-radius: 20px;
+    margin: 10px 0px 100px 0px;
+    
+}
+.social {
+    align-items: flex-end;
+    float: right;
+    margin: 0px 0px 0px 0px;
+}
+.fa {
+    padding: 20px;
+    font-size: 30px;
+    width: 70px;
+    text-align: right;
+    text-decoration: none;
+  }
+.fa-facebook {
+    color: #3B5998;
+  }
+  .fa-twitter {
+    color: #55ACEE;
+  }
+  .fa-instagram {
+    color: #125688;
+  }
